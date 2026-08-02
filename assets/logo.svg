@@ -1,0 +1,96 @@
+<svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leafBody" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#f0f4ff" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="veinGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ginkgo leaf outline -->
+  <path d="M 256 490
+           C 248 490, 245 482, 248 460
+           C 253 420, 258 380, 258 360
+           C 258 355, 256 355, 256 360
+           C 225 330, 180 310, 130 280
+           C 80 250, 50 200, 50 145
+           C 50 90, 90 50, 145 50
+           C 190 50, 225 75, 245 100
+           C 252 90, 258 90, 256 120
+           C 272 75, 310 50, 367 50
+           C 422 50, 462 90, 462 145
+           C 462 200, 432 250, 382 280
+           C 332 310, 287 330, 256 360
+           C 256 355, 254 355, 254 360
+           C 254 380, 259 420, 264 460
+           C 267 482, 264 490, 256 490 Z"
+        fill="url(#leafBody)"/>
+
+  <!-- Central split notch -->
+  <path d="M 256 130 L 256 360" stroke="#08080d" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Primary veins (organic + circuit fusion) -->
+  <g stroke="url(#veinGrad)" stroke-width="2" stroke-linecap="round" fill="none">
+    <!-- Left lobe veins -->
+    <path d="M 256 340 Q 220 310 160 270"/>
+    <path d="M 256 320 Q 200 290 140 250"/>
+    <path d="M 256 300 Q 190 260 120 220"/>
+    <path d="M 256 280 Q 180 230 110 180"/>
+    <path d="M 256 260 Q 175 200 100 150"/>
+    <!-- Right lobe veins -->
+    <path d="M 256 340 Q 292 310 352 270"/>
+    <path d="M 256 320 Q 312 290 372 250"/>
+    <path d="M 256 300 Q 322 260 392 220"/>
+    <path d="M 256 280 Q 332 230 402 180"/>
+    <path d="M 256 260 Q 337 200 412 150"/>
+  </g>
+
+  <!-- Circuit-style secondary veins (subtle angular traces) -->
+  <g stroke="rgba(255,255,255,0.15)" stroke-width="1.2" stroke-linecap="round" fill="none">
+    <path d="M 220 310 L 200 290 L 180 300"/>
+    <path d="M 292 310 L 312 290 L 332 300"/>
+    <path d="M 190 260 L 170 240 L 150 250"/>
+    <path d="M 322 260 L 342 240 L 362 250"/>
+    <path d="M 175 200 L 155 180 L 135 190"/>
+    <path d="M 337 200 L 357 180 L 377 190"/>
+  </g>
+
+  <!-- Neural node at the center (white, subtle AI hint) -->
+  <circle cx="256" cy="248" r="10" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="256" cy="248" r="5" fill="#08080d"/>
+
+  <!-- Small circuit connection points on outer veins -->
+  <circle cx="160" cy="270" r="3" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="140" cy="250" r="2.5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="120" cy="220" r="2" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="352" cy="270" r="3" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="372" cy="250" r="2.5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="392" cy="220" r="2" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Subtle outer glow ring -->
+  <path d="M 256 490
+           C 248 490, 245 482, 248 460
+           C 253 420, 258 380, 258 360
+           C 258 355, 256 355, 256 360
+           C 225 330, 180 310, 130 280
+           C 80 250, 50 200, 50 145
+           C 50 90, 90 50, 145 50
+           C 190 50, 225 75, 245 100
+           C 252 90, 258 90, 256 120
+           C 272 75, 310 50, 367 50
+           C 422 50, 462 90, 462 145
+           C 462 200, 432 250, 382 280
+           C 332 310, 287 330, 256 360
+           C 256 355, 254 355, 254 360
+           C 254 380, 259 420, 264 460
+           C 267 482, 264 490, 256 490 Z"
+        fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+</svg>

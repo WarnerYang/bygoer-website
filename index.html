@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="白果儿科技 - 从空白到成果，就用白果儿。专注AI开发、AGI平台、Agent智能体、游戏开发、数据分析、网站与小程序开发。">
+  <title>白果儿科技 | 从空白到成果，就用白果儿</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ====== NOTICE BAR ====== -->
+  <div class="notice-bar" aria-label="通知公告">
+    <div class="notice-track" id="noticeTrack">
+      <div class="notice-item">正在加载通知...</div>
+    </div>
+  </div>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="nav" aria-label="主导航">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="白果儿科技首页">
+        <svg class="nav-logo-icon" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="navLeaf" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#f0f4ff" stop-opacity="0.98"/>
+            </linearGradient>
+          </defs>
+          <!-- Ginkgo leaf -->
+          <path d="M 256 490 C 248 490, 245 482, 248 460 C 253 420, 258 380, 258 360 C 258 355, 256 355, 256 360 C 225 330, 180 310, 130 280 C 80 250, 50 200, 50 145 C 50 90, 90 50, 145 50 C 190 50, 225 75, 245 100 C 252 90, 258 90, 256 120 C 272 75, 310 50, 367 50 C 422 50, 462 90, 462 145 C 462 200, 432 250, 382 280 C 332 310, 287 330, 256 360 C 256 355, 254 355, 254 360 C 254 380, 259 420, 264 460 C 267 482, 264 490, 256 490 Z" fill="url(#navLeaf)"/>
+          <!-- Central notch -->
+          <path d="M 256 130 L 256 360" stroke="#08080d" stroke-width="5" stroke-linecap="round"/>
+          <!-- Core node -->
+          <circle cx="256" cy="248" r="10" fill="rgba(255,255,255,0.95)"/>
+          <circle cx="256" cy="248" r="5" fill="#08080d"/>
+        </svg>
+        <span class="nav-logo-text">
+          <span class="brand">白果儿</span>
+          <span class="suffix">科技</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">服务</a></li>
+        <li><a href="#cases">案例</a></li>
+        <li><a href="#approach">优势</a></li>
+        <li><a href="#about">关于</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">联系我们</button>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb"></div>
+      <div class="hero-orb"></div>
+    </div>
+    <div class="hero-content">
+      <img src="assets/logo.svg" alt="白果儿科技" class="hero-logo">
+      <div class="hero-badge">AGI 智能体平台 · 即将开放</div>
+      <h1 class="hero-title">
+        从空白到成果<br><span class="highlight">就用白果儿</span>
+      </h1>
+      <p class="hero-desc">
+        白果儿科技致力于 AI 开发与 AGI 智能体平台建设，为企业提供从想法到落地的一站式 AI 技术解决方案。让每一个创意，都能结出果实。
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary">探索服务</a>
+        <a href="#about" class="btn btn-secondary">了解更多</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES ====== -->
+  <section class="section" id="services">
+    <div class="section-label reveal">核心服务</div>
+    <h2 class="section-title reveal">我们做什么</h2>
+    <p class="section-desc reveal">
+      覆盖从 AI 平台到应用开发的完整技术链路，为您的业务注入智能动力。
+    </p>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>AGI 智能体平台</h3>
+        <p>下一代通用人工智能平台，支持多模态交互、自主决策与任务编排。让 AI Agent 真正成为您的数字员工。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M3 9h18"/></svg>
+        </div>
+        <h3>AI 应用开发</h3>
+        <p>基于大语言模型与多模态能力，定制企业级 AI 应用。智能客服、内容生成、数据分析——按需打造。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <h3>Agent 智能体开发</h3>
+        <p>构建具备感知、规划、执行能力的自主智能体。自动化工作流、智能决策辅助，让重复工作交给 AI。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/><line x1="10" y1="10" x2="17" y2="12"/><line x1="10" y1="14" x2="14" y2="13"/></svg>
+        </div>
+        <h3>游戏开发</h3>
+        <p>基于 AI 驱动的游戏开发管线，覆盖 2D/3D 游戏、微信小游戏、AI NPC 智能交互。从玩法设计到上线发布，全流程交付。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+        </div>
+        <h3>数据分析与商业智能</h3>
+        <p>融合 AI 的数据洞察引擎，实时监控、智能预警、可视化仪表盘。让数据驱动决策，而非直觉。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>网站开发</h3>
+        <p>从企业官网到 SaaS 平台，提供高性能、高体验的 Web 应用开发。响应式设计，全端适配。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3>小程序开发</h3>
+        <p>微信、支付宝等多平台小程序开发，打通社交生态，快速触达用户。轻量、高效、即用即走。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>软件开发</h3>
+        <p>定制化软件解决方案，覆盖桌面、移动端与服务端。从需求分析到持续交付，全流程专业服务。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        </div>
+        <h3>技术咨询</h3>
+        <p>AI 战略规划、技术选型评估、架构设计咨询。帮助企业在 AI 浪潮中做出正确的技术决策。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CASES ====== -->
+  <section class="section" id="cases">
+    <div class="section-label reveal">精选案例</div>
+    <h2 class="section-title reveal">不只是承诺，更有交付</h2>
+    <p class="section-desc reveal">
+      每一个项目，都是从空白到成果的旅程。以下是我们正在服务或已完成的核心案例。
+    </p>
+    <div class="cases-grid">
+      <div class="case-card reveal">
+        <div class="case-tag">AGI 平台</div>
+        <div class="case-img" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">
+          <div class="case-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+        </div>
+        <div class="case-content">
+          <h3>白果儿 AGI 智能体平台</h3>
+          <p>面向企业的下一代 AI 智能体平台，支持多模态交互、自主决策与任务编排。内测中，即将面向公众开放。</p>
+          <div class="case-meta">
+            <span class="case-status in-progress">内测中</span>
+            <span class="case-tech">LLM · Multi-Agent · RAG</span>
+          </div>
+        </div>
+      </div>
+      <div class="case-card reveal">
+        <div class="case-tag">AI 应用</div>
+        <div class="case-img" style="background:linear-gradient(135deg,#1a1a2e,#0f3460);">
+          <div class="case-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          </div>
+        </div>
+        <div class="case-content">
+          <h3>企业 AI 知识库助手</h3>
+          <p>基于 RAG 技术的私有化知识库问答系统，支持文档解析、智能检索与多轮对话，已服务超过 2000+ 内部用户。</p>
+          <div class="case-meta">
+            <span class="case-status done">已交付</span>
+            <span class="case-tech">RAG · Embedding · Vue3</span>
+          </div>
+        </div>
+      </div>
+      <div class="case-card reveal">
+        <div class="case-tag">游戏开发</div>
+        <div class="case-img" style="background:linear-gradient(135deg,#1a1a2e,#2d1b4e);">
+          <div class="case-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/><line x1="10" y1="10" x2="17" y2="12"/><line x1="10" y1="14" x2="14" y2="13"/></svg>
+          </div>
+        </div>
+        <div class="case-content">
+          <h3>AI 驱动的休闲游戏</h3>
+          <p>融合 AI NPC 智能对话、自适应难度调节的微信小游戏。已上线，累计用户突破 10 万，日活 2000+。</p>
+          <div class="case-meta">
+            <span class="case-status done">已上线</span>
+            <span class="case-tech">AI NPC · Cocos · WeChat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== APPROACH ====== -->
+  <section class="section" id="approach">
+    <div class="section-label reveal">为什么选择我们</div>
+    <h2 class="section-title reveal">AI 时代的工程之道</h2>
+    <p class="section-desc reveal">
+      不是卖设备，不是卖模板——我们提供以 AI 为核心的深度技术服务和平台产品。
+    </p>
+    <div class="approach-grid">
+      <div class="approach-card reveal">
+        <div class="approach-num">01</div>
+        <h3>AI 原生</h3>
+        <p>所有产品和服务均基于 AI 技术构建，从底层架构到上层应用全面智能化。</p>
+      </div>
+      <div class="approach-card reveal">
+        <div class="approach-num">02</div>
+        <h3>工程化交付</h3>
+        <p>规范的开发流程、完善的测试体系、持续集成与部署，确保产品稳定可靠。</p>
+      </div>
+      <div class="approach-card reveal">
+        <div class="approach-num">03</div>
+        <h3>深度定制</h3>
+        <p>拒绝千篇一律。深入了解业务场景，量身打造最合适的技术方案。</p>
+      </div>
+      <div class="approach-card reveal">
+        <div class="approach-num">04</div>
+        <h3>长期陪伴</h3>
+        <p>从项目启动到持续迭代，我们不只是开发者，更是您技术路上的长期伙伴。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="section" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <div class="section-label reveal">关于我们</div>
+        <h2 class="section-title reveal">白果儿科技</h2>
+        <p class="reveal">
+          白果儿科技诞生于深圳，取名自创始人的故乡「白果坪」——一个从空白土地结出果实的地方。
+        </p>
+        <p class="reveal">
+          我们相信 AI 不是少数人的特权，而应该是每个企业和创造者都能驾驭的力量。
+          白果儿科技以 AGI 智能体平台为核心，围绕 AI 开发、智能体、Web 应用等场景，
+          提供从技术咨询到产品交付的全链路服务。
+        </p>
+        <p class="reveal">
+          <strong>从空白到成果，就用白果儿。</strong>
+        </p>
+      </div>
+      <div class="about-visual reveal">
+        <img src="assets/logo.svg" alt="白果儿科技 Logo" class="about-logo-large">
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="cta-section" id="contact">
+    <div class="cta-bg"></div>
+    <div class="section-label reveal">开始合作</div>
+    <h2 class="section-title reveal">准备好开启您的<br>AI 之旅了吗？</h2>
+    <p class="section-desc reveal">
+      无论您是有一个初步想法，还是已经准备好详细需求，我们都期待与您交流。
+    </p>
+    <a href="https://github.com/WarnerYang/bygoer-website" target="_blank" rel="noopener" class="btn btn-primary reveal">
+      访问 GitHub 了解更多
+    </a>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <span class="footer-name">白果儿科技有限公司</span>
+        <span class="footer-slogan">从空白到成果，就用白果儿</span>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 白果儿科技. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
